@@ -31,7 +31,12 @@ const TodoItem = ({ item }) => {
 
   return (
     <div>
-      <input type="text" value={item.text} onChange={editItemText} />
+      <input
+        style={{ border: "none", textAlign: "center", fontWeight: 700 }}
+        type="text"
+        value={item.text}
+        onChange={editItemText}
+      />
       <input
         type="checkbox"
         checked={item.isComplete}
